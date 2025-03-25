@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+<h1 style="color: white;">My Book Library</h1>
+<div class="wrapper" style="flex-direction: column;">
+    <button id="openDialogForm" type="button"
+            style="background-color: lightgreen; width: 100%">Create</button>
+
+    <dialog id="dialogForm">
+        <form class="formBookCreate">
+            <p style="text-align: center">Create Book Form</p>
+            <div class="inputForm">
+                <label for="titleBook">Title</label>
+                <input type="text" name="titleBook" id="titleBook">
+            </div>
+
+            <div class="inputForm">
+                <label for="authorBook">Author</label>
+                <input type="text" name="authorBook" id="authorBook">
+            </div>
+
+            <div class="inputForm">
+                <label for="pageBook">Number Of Page</label>
+                <input type="number" name="pageBook" id="pageBook">
+            </div>
+
+            <div class="inputForm">
+                <label for="hasRead">Has already read ?
+                    <input type="checkbox" name="hasRead" id="hasRead">
+                </label>
+            </div>
+
+            <div class="buttonGroup">
+                <button type="button" onclick="addBookAction()">Create</button>
+                <button id="closeDialogForm" type="button">Close</button>
+            </div>
+        </form>
+    </dialog>
+
+</div>
+
+<div id="myLibBookContainer" class="wrapper"></div>
+
+</body>
+</html>
