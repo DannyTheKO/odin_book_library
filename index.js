@@ -39,6 +39,18 @@ function Book(id, title, author, page, hasRead) {
     this.hasRead = hasRead;
 }
 
+Book.prototype.proto_hasReadToggle = function () {
+    this.hasRead = !this.hasRead;
+}
+
+function toggleHasRead(id) {
+    const index = myLibrary.findIndex(book => book.id === id)
+    if (index !== -1) {
+        myLibrary[index].proto_hasReadToggle()
+    }
+    myLibraryDisplay();
+}
+
 /**
  * Add Book
  *
@@ -87,12 +99,6 @@ function deleteBook(id) {
         myLibrary.splice(index, 1);
     }
 
-    myLibraryDisplay();
-}
-
-function toggleHasRead(id) {
-    const index = myLibrary.findIndex(book => book.id === id)
-    myLibrary[index].hasRead = !myLibrary[index].hasRead;
     myLibraryDisplay();
 }
 

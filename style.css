@@ -1,9 +1,27 @@
 body {
-    background-color: hsl(225, 6%, 13%);
+    margin: 0;
+
+    padding: 0;
+    overflow-x: hidden;
+
+    background-color: hsl(185, 89%, 18%);
 }
 
 h1 {
     text-align: center;
+}
+
+#headerTitle {
+    margin: 0 0 16px 0;
+    background-color: white;
+
+    border-radius: 16px;
+    border: 3px solid black;
+}
+
+#openDialogForm {
+    height: 35px;
+
 }
 
 #dialogForm {
@@ -47,8 +65,7 @@ h1 {
 
 .wrapper {
     display: flex;
-    justify-content: center;
-    align-items: start;
+    justify-content: space-evenly;
 
     flex-wrap: wrap;
 
