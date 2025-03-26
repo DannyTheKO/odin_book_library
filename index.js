@@ -131,7 +131,7 @@ function myLibraryDisplay() {
             divBook.style.backgroundColor = "lightgreen"
         } else  {
             bookHasRead.textContent = "Hasn't read"
-            divBook.style.backgroundColor = "lightgray"
+            divBook.style.backgroundColor = "lightblue"
         }
 
         const bookAuthor = document.createElement("h4")

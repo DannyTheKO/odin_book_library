@@ -11,6 +11,47 @@ h1 {
     text-align: center;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 16px;
+
+    margin: 0 6% 16px 6%;
+
+    button {
+        width: auto;
+        border-radius: 8px;
+        padding: 8px;
+    }
+}
+
+.book {
+    width: 200px;
+    height: fit-content;
+
+    border: 3px solid black;
+    border-radius: 16px;
+
+    background-color: lightblue;
+
+    padding: 16px;
+
+    button {
+        width: auto;
+        border-radius: 8px;
+        padding: 8px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: lightsalmon;
+        }
+    }
+}
+
 #headerTitle {
     margin: 0 0 16px 0;
     background-color: white;
@@ -20,8 +61,15 @@ h1 {
 }
 
 #openDialogForm {
-    height: 35px;
-
+    height: 45px;
+    width: 150px;
+    padding: 0;
+    text-align: center;
+    background-color: lightgreen;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    font-variant-caps: all-petite-caps;
 }
 
 #dialogForm {
@@ -61,33 +109,4 @@ h1 {
             align-items: center;
         }
     }
-}
-
-.wrapper {
-    display: flex;
-    justify-content: space-evenly;
-
-    flex-wrap: wrap;
-
-    gap: 16px;
-
-    margin: 0 6% 16px 6%;
-
-    button {
-        width: auto;
-        border-radius: 8px;
-        padding: 8px;
-    }
-}
-
-.book {
-    width: 200px;
-    height: fit-content;
-
-    border: 3px solid black;
-    border-radius: 16px;
-
-    background-color: lightblue;
-
-    padding: 16px;
 }
